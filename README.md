@@ -1,3 +1,18 @@
+# !!! Just for A100/A800 EVO2 ENVIRONMENT CONSTRCTION !!!
+
+you could use FP8 at 4090 env (ComputeCapability>8.9)
+but not in ComputeCapability=8.0, like A100/A800
+
+Default Cloud Server Configs: CUDA12.8+PyTorch2.8.0+Python3.12
+
+[A800-ComputeCApability8.0@NO_FP8]
+conda install -c conda-forge transformer-engine-torch=2.3.0
+pip install ninja
+pip install flash-attn==2.8.0.post2 --no-build-isolation
+pip install evo2
+
+AND REMENBER TO TURN DOWN THE CONFIG'S FP8 SUPPORT WHICH IS DEFAULTLY OPENED!
+
 # Evo 2: Genome modeling and design across all domains of life
 
 ![Evo 2](evo2.jpg)
