@@ -103,7 +103,7 @@ def main():
         
     # model = Evo2(args.model_name)
     # Loading model at local path in evo2 generation tests
-    model = Evo2(arg.model_name, local_path="/home/models/arcinstitute/evo2/evo2_7b.pt")
+    model = Evo2(args.model_name, local_path="/home/models/arcinstitute/evo2/evo2_7b.pt")
     
     # Test parameters: greedy sampling of 500 tokens
     test_params = {
